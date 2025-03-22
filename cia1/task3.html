@@ -1,0 +1,71 @@
+<!--Build a webpage with a two-column layout (sidebar and main content) using CSS Flexbox.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Column Layout</title>
+    <style>
+        /* Basic reset for margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Setting up the flex container */
+        body {
+            display: flex;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Sidebar Styling */
+        .sidebar {
+            width: 250px; /* Fixed width for the sidebar */
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Main content styling */
+        .main-content {
+            flex-grow: 1; /* Take up remaining space */
+            padding: 20px;
+            background-color: #ecf0f1;
+        }
+
+        /* Optional: Styling for the heading in both sidebar and main content */
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .sidebar h1 {
+            font-size: 24px;
+        }
+
+        .main-content h1 {
+            font-size: 28px;
+        }
+
+        /* Optional: Styling for paragraphs */
+        .sidebar p, .main-content p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h1>Sidebar</h1>
+        <p>This is the sidebar content. It contains links, navigation, or other useful information.</p>
+    </div>
+
+    <div class="main-content">
+        <h1>Main Content</h1>
+        <p>This is the main content of the webpage. You can add articles, images, or other information here.</p>
+    </div>
+
+</body>
+</html>

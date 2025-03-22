@@ -1,0 +1,91 @@
+<!--Create a webpage with a three-column layout using CSS Grid.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three-Column Layout</title>
+    <style>
+        /* Basic reset for margins and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Set up the grid container */
+        body {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr; /* Sidebar | Main Content | Sidebar */
+            grid-gap: 20px; /* Gap between columns */
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* Styling for sidebar (left) */
+        .sidebar-left {
+            background-color: #34495e;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Styling for main content */
+        .main-content {
+            background-color: #ecf0f1;
+            padding: 20px;
+        }
+
+        /* Styling for sidebar (right) */
+        .sidebar-right {
+            background-color: #34495e;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Optional: Heading styling */
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .sidebar-left h1, .sidebar-right h1 {
+            font-size: 24px;
+        }
+
+        .main-content h1 {
+            font-size: 28px;
+        }
+
+        /* Optional: Paragraph styling */
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Responsive layout: Stacking columns on smaller screens */
+        @media (max-width: 768px) {
+            body {
+                grid-template-columns: 1fr; /* Stacks columns on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar-left">
+        <h1>Left Sidebar</h1>
+        <p>This is the left sidebar content. It can include links, navigation, or additional information.</p>
+    </div>
+
+    <div class="main-content">
+        <h1>Main Content</h1>
+        <p>This is the main content area. You can add articles, text, or any other content you like here.</p>
+    </div>
+
+    <div class="sidebar-right">
+        <h1>Right Sidebar</h1>
+        <p>This is the right sidebar. You can add advertisements, additional links, or other elements here.</p>
+    </div>
+
+</body>
+</html>

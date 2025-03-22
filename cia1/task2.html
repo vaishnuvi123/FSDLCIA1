@@ -1,0 +1,49 @@
+<!--Design a webpage with a centered div containing a heading and a paragraph. 
+Add a border and padding to the div.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Div</title>
+    <style>
+        /* Ensures the body takes up full height and centers the content */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styling the centered div */
+        .centered-div {
+            border: 2px solid #000; /* Adding a border */
+            padding: 20px; /* Adding padding inside the div */
+            text-align: center; /* Centering text inside the div */
+            width: 300px; /* Setting a fixed width */
+        }
+
+        /* Styling the heading */
+        .centered-div h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        /* Styling the paragraph */
+        .centered-div p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="centered-div">
+        <h1>Welcome to My Webpage</h1>
+        <p>This is a simple webpage with a centered div, containing a heading and a paragraph.</p>
+    </div>
+
+</body>
+</html>
